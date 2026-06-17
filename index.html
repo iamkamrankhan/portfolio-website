@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jenny Crea – Product Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Hidden SVG symbol definitions -->
+  <svg style="display:none" aria-hidden="true">
+    <defs>
+      <symbol id="icon-star" viewBox="0 0 32 32">
+        <path d="M23.8912 19.0934C23.5459 19.428 23.3872 19.912 23.4659 20.3867L24.6512 26.9467C24.7512 27.5027 24.5165 28.0654 24.0512 28.3867C23.5952 28.72 22.9885 28.76 22.4912 28.4934L16.5859 25.4134C16.3805 25.304 16.1525 25.2454 15.9192 25.2387H15.5579C15.4325 25.2574 15.3099 25.2974 15.1979 25.3587L9.29118 28.4534C8.99918 28.6 8.66852 28.652 8.34452 28.6C7.55518 28.4507 7.02852 27.6987 7.15785 26.9054L8.34452 20.3454C8.42318 19.8667 8.26452 19.38 7.91918 19.04L3.10452 14.3734C2.70185 13.9827 2.56185 13.396 2.74585 12.8667C2.92452 12.3387 3.38052 11.9534 3.93118 11.8667L10.5579 10.9054C11.0619 10.8534 11.5045 10.5467 11.7312 10.0934L14.6512 4.10671C14.7205 3.97337 14.8099 3.85071 14.9179 3.74671L15.0378 3.65337C15.1005 3.58404 15.1725 3.52671 15.2525 3.48004L15.3979 3.42671L15.6245 3.33337H16.1858C16.6872 3.38537 17.1285 3.68537 17.3592 4.13337L20.3179 10.0934C20.5312 10.5294 20.9459 10.832 21.4245 10.9054L28.0512 11.8667C28.6112 11.9467 29.0792 12.3334 29.2645 12.8667C29.4392 13.4014 29.2885 13.988 28.8779 14.3734L23.8912 19.0934Z" fill="#FD853A"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- ======== HEADER / NAVBAR ======== -->
+  <header class="site-header" id="top">
+    <nav class="navbar">
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <div class="nav-group">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#service" class="nav-link">Service</a>
+      </div>
+
+      <a href="#top" class="nav-logo">
+        <svg class="logo-icon-svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+          <rect width="46" height="46" rx="23" fill="#FD853A"/>
+          <path d="M35.1944 26.5953C34.1017 27.7882 32.7602 28.526 31.1371 28.5885C28.0722 28.7063 25.6997 26.9061 25.4059 24.6538C24.8212 20.1703 27.7404 17.4112 30.9375 17.4112C32.5643 17.4112 33.7753 18.0328 34.8504 19.0293L37.6553 15.8705C36.1332 14.3661 33.7922 13 30.9375 13C28.1735 13 25.6862 13.914 23.8 15.6215V13.4076H9.90002V17.6873H18.6941V24.4952C18.6941 27.5861 17.517 28.5885 15.2262 28.5885C13.7383 28.5885 12.2159 27.7186 10.9276 26.1089L8 29.2749C9.96306 32.0211 12.8978 33 15.3954 33C19.2608 33 21.5638 31.5884 22.7551 29.4611C24.6941 31.801 27.5364 33 30.6114 33C33.6424 33 36.1623 31.8625 38 29.6852L35.1944 26.5953Z" fill="white"/>
+        </svg>
+        <svg class="logo-text-svg" width="83" height="20" viewBox="0 0 83 20" fill="none">
+          <g clip-path="url(#clip-logo)">
+            <path d="M0 15.9906L2.38046 13.3938C3.42546 14.7162 4.66067 15.4308 5.87012 15.432C7.73027 15.432 8.68769 14.6111 8.68927 12.0719L8.69561 3.6912L1.55342 3.68396L1.5562 0.165649L12.8439 0.174503L12.8348 12.4172C12.832 16.051 11.0642 19.057 6.00486 19.0542C3.9759 19.053 1.59305 18.2481 0 15.9906Z" fill="white"/>
+            <path d="M15.8439 9.70423C15.8487 3.55936 19.6878 -0.00402074 24.5867 3.4047e-06C26.9049 3.4047e-06 28.8059 1.12435 30.0419 2.36177L27.7609 4.95534C26.8891 4.13521 25.9055 3.62375 24.5839 3.62254C21.9879 3.62254 20.0905 5.85674 20.0881 9.56942C20.0849 13.3795 21.9787 15.592 24.7377 15.596C26.0565 15.596 27.1455 14.9408 28.0335 13.9622L30.3098 16.5014C28.817 18.2897 26.7698 19.2217 24.3081 19.2197C19.7623 19.2141 15.8392 15.9582 15.8439 9.70423Z" fill="white"/>
+            <path d="M47.7503 18.8839L43.6202 11.4642C45.5731 10.5704 46.8804 8.84406 46.8824 6.12093C46.886 1.71127 43.6991 0.343864 39.825 0.340644L33.3236 0.335815L33.3098 18.8714L37.4568 18.8746L37.4616 12.207H39.6356L43.1201 18.8771L47.7503 18.8839ZM37.4679 3.66861H39.4854C41.6602 3.66861 42.8265 4.28632 42.8249 6.1161C42.8249 7.93058 41.6562 8.87787 39.4814 8.87626H37.464L37.4679 3.66861Z" fill="white"/>
+            <path d="M50.7649 0.33728L62.8872 0.346536L62.8844 3.86364L54.9017 3.8576L54.8989 7.57511L61.6813 7.58034L61.6785 11.0974L54.8962 11.0922L54.893 15.3578L63.1567 15.3642L63.1539 18.8826L50.7503 18.8729L50.7649 0.33728Z" fill="white"/>
+            <path d="M78.12 18.8781L82.5085 18.8817L76.8278 0.341634L71.8667 0.338013L66.1567 18.8692L70.3929 18.8724L71.5124 14.4648L77.016 14.4688L78.12 18.8781ZM72.3422 11.1968L72.7781 9.48972C73.2426 7.63862 73.7526 5.4688 74.202 3.51306H74.3141C74.7532 5.4696 75.3076 7.64143 75.7697 9.49214L76.1977 11.2L72.3422 11.1968Z" fill="white"/>
+          </g>
+          <defs>
+            <clipPath id="clip-logo">
+              <rect width="82.5084" height="19.2197" fill="white"/>
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+
+      <div class="nav-group">
+        <a href="#resume" class="nav-link">Resume</a>
+        <a href="#project" class="nav-link">Project</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Mobile slide-down menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home" class="mobile-nav-link">Home</a>
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#service" class="mobile-nav-link">Service</a>
+      <a href="#resume" class="mobile-nav-link">Resume</a>
+      <a href="#project" class="mobile-nav-link">Project</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ======== HERO ======== -->
+    <section class="hero-section" id="home">
+      <div class="hero-layout">
+
+        <!-- Left: Testimonial -->
+        <div class="hero-testimonial">
+          <svg class="testimonial-quote-icon" width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+            <path d="M12.135 17.445H5.1C5.22 10.44 6.6 9.28496 10.905 6.73496C11.4 6.43496 11.565 5.80496 11.265 5.29496C10.98 4.79996 10.335 4.63496 9.84 4.93496C4.77 7.93496 3 9.76496 3 18.48V26.565C3 29.13 5.085 31.2 7.635 31.2H12.135C14.775 31.2 16.77 29.205 16.77 26.565V22.065C16.77 19.44 14.775 17.445 12.135 17.445Z" fill="#344054"/>
+            <path d="M28.365 17.445H21.33C21.45 10.44 22.83 9.28496 27.135 6.73496C27.63 6.43496 27.795 5.80496 27.495 5.29496C27.195 4.79996 26.565 4.63496 26.055 4.93496C20.985 7.93496 19.215 9.76496 19.215 18.495V26.58C19.215 29.145 21.3 31.215 23.85 31.215H28.35C30.99 31.215 32.985 29.22 32.985 26.58V22.08C33 19.44 31.005 17.445 28.365 17.445Z" fill="#344054"/>
+          </svg>
+          <p class="testimonial-body">Jenny's Exceptional product design ensure our website's success. Highly Recommended</p>
+        </div>
+
+        <!-- Center: Main content -->
+        <div class="hero-main">
+          <div class="hero-greeting-wrap">
+            <span class="greeting-badge">Hello!</span>
+            <svg class="greeting-sparkle" width="28" height="29" viewBox="0 0 28 29" fill="none" aria-hidden="true">
+              <path d="M0 18C0 15 3 9 0 0M7.5 21.5C11.8333 17.3333 20.7 7.2 21.5 0M10.5 28.5C13.1667 28.5 20.3 27.1 27.5 21.5" stroke="#FEB273" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+
+          <h1 class="hero-headline">
+            I'm <span class="hero-name-accent">Jenny</span>,<br>Product Designer
+          </h1>
+
+          <svg class="hero-decorative-squiggle" width="87" height="89" viewBox="0 0 87 89" fill="none" aria-hidden="true">
+            <path d="M80.3106 42.2314C78.6283 49.8914 67.6036 63.529 70.2166 88.1913M63.1234 29.0889C49.7223 37.2977 21.4003 58.1992 15.32 76.1346M59.3888 9.53326C52.5799 8.03784 33.5811 7.61228 12.0568 17.8733" stroke="#FEB273" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+          <div class="hero-portrait-wrap">
+            <div class="portrait-semicircle"></div>
+            <img
+              class="portrait-photo"
+              src="https://api.builder.io/api/v1/image/assets/TEMP/2035bd7a7460ff83e0a9646132a1274bba8c3b2c?width=800"
+              alt="Jenny – Product Designer"
+            />
+          </div>
+
+          <div class="hero-cta-bar">
+            <a href="#project" class="cta-btn cta-portfolio">
+              Portfolio
+              <svg width="22" height="22" viewBox="0 0 42 42" fill="none" aria-hidden="true">
+                <path d="M12.25 29.75L29.75 12.25" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12.25 12.25H29.75V29.75" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#contact" class="cta-btn cta-hire">Hire me</a>
+          </div>
+        </div>
+
+        <!-- Right: Rating + Experience -->
+        <div class="hero-rating">
+          <div class="stars-row" aria-label="5 star rating">
+            <svg width="32" height="32"><use href="#icon-star"/></svg>
+            <svg width="32" height="32"><use href="#icon-star"/></svg>
+            <svg width="32" height="32"><use href="#icon-star"/></svg>
+            <svg width="32" height="32"><use href="#icon-star"/></svg>
+            <svg width="32" height="32"><use href="#icon-star"/></svg>
+          </div>
+          <p class="experience-years">10 Years</p>
+          <p class="experience-label">Experience</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======== ABOUT ======== -->
+    <section class="page-section about-section" id="about">
+      <div class="section-container">
+        <div class="section-tag">About Me</div>
+        <div class="about-layout">
+          <div class="about-image-col">
+            <div class="about-image-wrap">
+              <img
+                class="about-photo"
+                src="https://api.builder.io/api/v1/image/assets/TEMP/2035bd7a7460ff83e0a9646132a1274bba8c3b2c?width=600"
+                alt="Jenny – Product Designer"
+              />
+              <div class="about-badge-card">
+                <span class="about-badge-number">10+</span>
+                <span class="about-badge-text">Years of Experience</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-content-col">
+            <h2 class="section-title">Crafting Experiences <span class="text-orange">That Matter</span></h2>
+            <p class="about-description">
+              I'm Jenny, a passionate Product Designer with over 10 years of experience creating intuitive and beautiful digital products. I specialize in UX research, interface design, and design systems that help brands connect with their users on a deeper level.
+            </p>
+            <p class="about-description">
+              My work spans across startups and enterprises, helping teams ship products that are not only functional but truly delightful to use. I believe great design is the bridge between a great idea and a great user experience.
+            </p>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number">120+</span>
+                <span class="stat-label">Projects Done</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">85+</span>
+                <span class="stat-label">Happy Clients</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">15+</span>
+                <span class="stat-label">Awards Won</span>
+              </div>
+            </div>
+            <a href="#contact" class="cta-btn cta-portfolio">Get In Touch
+              <svg width="20" height="20" viewBox="0 0 42 42" fill="none" aria-hidden="true">
+                <path d="M12.25 29.75L29.75 12.25" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12.25 12.25H29.75V29.75" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== SERVICES ======== -->
+    <section class="page-section services-section" id="service">
+      <div class="section-container">
+        <div class="section-tag">What I Do</div>
+        <h2 class="section-title centered-title">My <span class="text-orange">Services</span></h2>
+        <p class="section-subtitle">I offer a comprehensive range of design services to help you build meaningful digital products.</p>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <rect width="40" height="40" rx="12" fill="#FD853A" fill-opacity="0.1"/>
+                <path d="M20 8C13.373 8 8 13.373 8 20s5.373 12 12 12 12-5.373 12-12S26.627 8 20 8zm0 4a8 8 0 1 1 0 16A8 8 0 0 1 20 12zm-1 4v5l4 2.4-1 1.6L17 22v-6h2z" fill="#FD853A"/>
+              </svg>
+            </div>
+            <h3 class="service-title">UX / UI Design</h3>
+            <p class="service-desc">Creating seamless, intuitive interfaces grounded in user research and best-in-class interaction patterns.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <rect width="40" height="40" rx="12" fill="#FD853A" fill-opacity="0.1"/>
+                <path d="M28 12H12a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V14a2 2 0 0 0-2-2zm0 14H12V14h16v12zm-8-2l-5-3.5V22l5-3.5V26z" fill="#FD853A"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Brand Identity</h3>
+            <p class="service-desc">Building cohesive visual identities — logos, color systems, and typography — that tell your brand's story.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <rect width="40" height="40" rx="12" fill="#FD853A" fill-opacity="0.1"/>
+                <path d="M30 10H10a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V12a2 2 0 0 0-2-2zm-1 17H11V13h18v14zM14 17h8v2h-8v-2zm0 4h12v2H14v-2z" fill="#FD853A"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Web Design</h3>
+            <p class="service-desc">Designing responsive, visually stunning websites that convert visitors into loyal customers.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <rect width="40" height="40" rx="12" fill="#FD853A" fill-opacity="0.1"/>
+                <path d="M20 10a10 10 0 1 0 0 20A10 10 0 0 0 20 10zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm1-13h-2v5.414l3.293 3.293 1.414-1.414L21 19.586V15z" fill="#FD853A"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Prototyping</h3>
+            <p class="service-desc">Rapidly turning ideas into interactive prototypes so you can validate concepts before building them.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <rect width="40" height="40" rx="12" fill="#FD853A" fill-opacity="0.1"/>
+                <path d="M13 13h6v6h-6zM21 13h6v6h-6zM13 21h6v6h-6zM21 21h6v6h-6z" fill="#FD853A"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Design Systems</h3>
+            <p class="service-desc">Building scalable design systems and component libraries that keep teams aligned and moving fast.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <rect width="40" height="40" rx="12" fill="#FD853A" fill-opacity="0.1"/>
+                <path d="M20 11l-1.414 1.414L24.172 18H10v2h14.172l-5.586 5.586L20 27l8-8-8-8z" fill="#FD853A"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Consulting</h3>
+            <p class="service-desc">Strategic design consulting to help teams improve their processes, tools, and product thinking.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== RESUME ======== -->
+    <section class="page-section resume-section" id="resume">
+      <div class="section-container">
+        <div class="section-tag">My Journey</div>
+        <h2 class="section-title centered-title">Resume &amp; <span class="text-orange">Experience</span></h2>
+        <div class="resume-layout">
+
+          <!-- Experience Column -->
+          <div class="resume-col">
+            <h3 class="resume-col-title">Work Experience</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">2021 – Present</span>
+                  <h4 class="timeline-role">Lead Product Designer</h4>
+                  <p class="timeline-company">Aether Studio, San Francisco</p>
+                  <p class="timeline-desc">Leading the design team to craft user-centric products for enterprise SaaS clients. Defined design language and component system.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">2018 – 2021</span>
+                  <h4 class="timeline-role">Senior UX Designer</h4>
+                  <p class="timeline-company">Pixel & Co., New York</p>
+                  <p class="timeline-desc">Designed end-to-end experiences for fintech and e-commerce products, conducting user research and usability testing.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">2015 – 2018</span>
+                  <h4 class="timeline-role">UI/UX Designer</h4>
+                  <p class="timeline-company">Bright Labs, London</p>
+                  <p class="timeline-desc">Collaborated with cross-functional teams to ship mobile and web features for 500k+ user products.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">2013 – 2015</span>
+                  <h4 class="timeline-role">Junior Designer</h4>
+                  <p class="timeline-company">Freelance &amp; Agencies</p>
+                  <p class="timeline-desc">Worked with various clients across branding, web design, and print to build a diverse creative foundation.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education Column -->
+          <div class="resume-col">
+            <h3 class="resume-col-title">Education &amp; Skills</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">2011 – 2013</span>
+                  <h4 class="timeline-role">M.A. Interaction Design</h4>
+                  <p class="timeline-company">Royal College of Art, London</p>
+                  <p class="timeline-desc">Focused on human-centred design, cognitive psychology, and emerging interaction paradigms.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">2008 – 2011</span>
+                  <h4 class="timeline-role">B.A. Graphic Design</h4>
+                  <p class="timeline-company">Parsons School of Design, NYC</p>
+                  <p class="timeline-desc">Graduated with honours. Specialised in typography, visual communication, and digital media.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-block">
+              <h3 class="resume-col-title">Core Skills</h3>
+              <div class="skill-row">
+                <span class="skill-name">Product Design</span>
+                <div class="skill-bar"><div class="skill-fill" style="--fill:95%"></div></div>
+              </div>
+              <div class="skill-row">
+                <span class="skill-name">UX Research</span>
+                <div class="skill-bar"><div class="skill-fill" style="--fill:90%"></div></div>
+              </div>
+              <div class="skill-row">
+                <span class="skill-name">Figma / Sketch</span>
+                <div class="skill-bar"><div class="skill-fill" style="--fill:98%"></div></div>
+              </div>
+              <div class="skill-row">
+                <span class="skill-name">Design Systems</span>
+                <div class="skill-bar"><div class="skill-fill" style="--fill:88%"></div></div>
+              </div>
+              <div class="skill-row">
+                <span class="skill-name">Brand Identity</span>
+                <div class="skill-bar"><div class="skill-fill" style="--fill:85%"></div></div>
+              </div>
+              <div class="skill-row">
+                <span class="skill-name">Prototyping</span>
+                <div class="skill-bar"><div class="skill-fill" style="--fill:92%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== PROJECTS ======== -->
+    <section class="page-section projects-section" id="project">
+      <div class="section-container">
+        <div class="section-tag">My Work</div>
+        <h2 class="section-title centered-title">Featured <span class="text-orange">Projects</span></h2>
+        <p class="section-subtitle">A selection of work I'm proud of — spanning mobile apps, SaaS dashboards, and brand identities.</p>
+        <div class="projects-grid">
+          <div class="project-card project-card--large">
+            <div class="project-thumbnail" style="--card-bg: linear-gradient(135deg, #FD853A 0%, #FEB273 100%)">
+              <div class="project-placeholder-art">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+                  <rect x="10" y="20" width="60" height="40" rx="4" stroke="white" stroke-width="2" fill="none"/>
+                  <rect x="20" y="30" width="18" height="14" rx="2" fill="white" fill-opacity="0.5"/>
+                  <rect x="44" y="30" width="16" height="6" rx="2" fill="white" fill-opacity="0.5"/>
+                  <rect x="44" y="40" width="10" height="4" rx="2" fill="white" fill-opacity="0.3"/>
+                </svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">SaaS Dashboard</span>
+              <h3 class="project-name">Aether Analytics Platform</h3>
+              <p class="project-desc">End-to-end redesign of a B2B analytics dashboard — improved task completion by 40%.</p>
+              <a href="#" class="project-link">View Case Study
+                <svg width="16" height="16" viewBox="0 0 42 42" fill="none" aria-hidden="true">
+                  <path d="M12.25 29.75L29.75 12.25" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12.25 12.25H29.75V29.75" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-thumbnail" style="--card-bg: linear-gradient(135deg, #344054 0%, #667085 100%)">
+              <div class="project-placeholder-art">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" aria-hidden="true">
+                  <rect x="15" y="8" width="30" height="44" rx="4" stroke="white" stroke-width="2" fill="none"/>
+                  <rect x="22" y="16" width="16" height="12" rx="2" fill="white" fill-opacity="0.4"/>
+                  <rect x="22" y="32" width="16" height="3" rx="1" fill="white" fill-opacity="0.4"/>
+                  <rect x="22" y="38" width="10" height="3" rx="1" fill="white" fill-opacity="0.3"/>
+                  <circle cx="30" cy="46" r="2" fill="white" fill-opacity="0.5"/>
+                </svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Mobile App</span>
+              <h3 class="project-name">Finova Banking App</h3>
+              <p class="project-desc">Designed a fintech app with 4.9★ App Store rating and 200k+ downloads.</p>
+              <a href="#" class="project-link">View Case Study
+                <svg width="16" height="16" viewBox="0 0 42 42" fill="none" aria-hidden="true">
+                  <path d="M12.25 29.75L29.75 12.25" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12.25 12.25H29.75V29.75" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-thumbnail" style="--card-bg: linear-gradient(135deg, #FEB273 0%, #FD853A 100%)">
+              <div class="project-placeholder-art">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" aria-hidden="true">
+                  <circle cx="30" cy="24" r="12" stroke="white" stroke-width="2" fill="none"/>
+                  <path d="M14 48c0-8.837 7.163-16 16-16s16 7.163 16 16" stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/>
+                </svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Brand Identity</span>
+              <h3 class="project-name">Solara Brand System</h3>
+              <p class="project-desc">Complete visual identity for a sustainable energy startup — logo, colors, typography.</p>
+              <a href="#" class="project-link">View Case Study
+                <svg width="16" height="16" viewBox="0 0 42 42" fill="none" aria-hidden="true">
+                  <path d="M12.25 29.75L29.75 12.25" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12.25 12.25H29.75V29.75" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-thumbnail" style="--card-bg: linear-gradient(135deg, #101828 0%, #344054 100%)">
+              <div class="project-placeholder-art">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" aria-hidden="true">
+                  <rect x="8" y="14" width="44" height="32" rx="3" stroke="white" stroke-width="2" fill="none"/>
+                  <line x1="8" y1="22" x2="52" y2="22" stroke="white" stroke-width="1.5" opacity="0.5"/>
+                  <circle cx="14" cy="18" r="2" fill="white" fill-opacity="0.6"/>
+                  <circle cx="21" cy="18" r="2" fill="white" fill-opacity="0.6"/>
+                  <circle cx="28" cy="18" r="2" fill="white" fill-opacity="0.6"/>
+                  <rect x="14" y="28" width="32" height="12" rx="2" fill="white" fill-opacity="0.15"/>
+                </svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Web Design</span>
+              <h3 class="project-name">TrueNorth Marketing Site</h3>
+              <p class="project-desc">High-converting marketing website for a B2B SaaS company — 60% increase in sign-ups.</p>
+              <a href="#" class="project-link">View Case Study
+                <svg width="16" height="16" viewBox="0 0 42 42" fill="none" aria-hidden="true">
+                  <path d="M12.25 29.75L29.75 12.25" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12.25 12.25H29.75V29.75" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-thumbnail" style="--card-bg: linear-gradient(135deg, #FD853A 0%, #101828 100%)">
+              <div class="project-placeholder-art">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" aria-hidden="true">
+                  <rect x="10" y="10" width="18" height="18" rx="3" fill="white" fill-opacity="0.3"/>
+                  <rect x="32" y="10" width="18" height="18" rx="3" fill="white" fill-opacity="0.5"/>
+                  <rect x="10" y="32" width="18" height="18" rx="3" fill="white" fill-opacity="0.5"/>
+                  <rect x="32" y="32" width="18" height="18" rx="3" fill="white" fill-opacity="0.3"/>
+                </svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Design System</span>
+              <h3 class="project-name">Nova Component Library</h3>
+              <p class="project-desc">A comprehensive design system of 200+ components used by 12 product teams.</p>
+              <a href="#" class="project-link">View Case Study
+                <svg width="16" height="16" viewBox="0 0 42 42" fill="none" aria-hidden="true">
+                  <path d="M12.25 29.75L29.75 12.25" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12.25 12.25H29.75V29.75" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-thumbnail" style="--card-bg: linear-gradient(135deg, #667085 0%, #FEB273 100%)">
+              <div class="project-placeholder-art">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" aria-hidden="true">
+                  <path d="M30 10L10 22v16l20 12 20-12V22L30 10z" stroke="white" stroke-width="2" fill="none"/>
+                  <path d="M10 22l20 12 20-12M30 34v14" stroke="white" stroke-width="1.5" opacity="0.6"/>
+                </svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">E-commerce</span>
+              <h3 class="project-name">Bloom Retail Experience</h3>
+              <p class="project-desc">Redesigned checkout flow for a fashion brand, reducing cart abandonment by 35%.</p>
+              <a href="#" class="project-link">View Case Study
+                <svg width="16" height="16" viewBox="0 0 42 42" fill="none" aria-hidden="true">
+                  <path d="M12.25 29.75L29.75 12.25" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12.25 12.25H29.75V29.75" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== CONTACT ======== -->
+    <section class="page-section contact-section" id="contact">
+      <div class="section-container">
+        <div class="section-tag">Get In Touch</div>
+        <h2 class="section-title centered-title">Let's Work <span class="text-orange">Together</span></h2>
+        <p class="section-subtitle">Have a project in mind? I'd love to hear about it. Send me a message and I'll get back to you within 24 hours.</p>
+        <div class="contact-layout">
+          <div class="contact-info-col">
+            <div class="contact-info-card">
+              <h3 class="contact-info-heading">Contact Information</h3>
+              <div class="contact-detail">
+                <div class="contact-icon-wrap">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z" fill="#FD853A"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact-detail-label">Email</p>
+                  <p class="contact-detail-value">jenny@jcrea.design</p>
+                </div>
+              </div>
+              <div class="contact-detail">
+                <div class="contact-icon-wrap">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.58a1 1 0 0 1-.25 1.01l-2.2 2.2z" fill="#FD853A"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact-detail-label">Phone</p>
+                  <p class="contact-detail-value">+1 (555) 123-4567</p>
+                </div>
+              </div>
+              <div class="contact-detail">
+                <div class="contact-icon-wrap">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" fill="#FD853A"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact-detail-label">Location</p>
+                  <p class="contact-detail-value">San Francisco, CA</p>
+                </div>
+              </div>
+              <div class="contact-social-row">
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                    <path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-9 14H7v-7h3v7zm-1.5-8a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM17 17h-3v-3.5c0-1-.4-1.5-1.1-1.5-.8 0-1.4.5-1.4 1.5V17h-3v-7h3v1c.5-.7 1.3-1.2 2.3-1.2 1.7 0 3.2 1.2 3.2 3.7V17z"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Dribbble">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5.5 6.5c.8 1 1.3 2.2 1.4 3.5-2-.4-3.8-.5-5.5-.2-.3-.8-.6-1.5-1-2.3 1.8-.7 3.7-.8 5.1-1zm-2.5-2c.8.7 1.5 1.5 1.9 2.4-1.2.4-2.6.6-4 .6-.6 0-1.2 0-1.8-.1.6-1.2 1.4-2.2 2.3-2.9.6.1 1.1 0 1.6 0zM12 4c.3 0 .5 0 .8.1-.8.7-1.6 1.7-2.2 2.9-1.8-.4-3.5-1.2-4.9-2.3C7.2 4.5 9.5 4 12 4zM4 12c0-.4 0-.7.1-1.1 1.7 1.2 3.7 2.1 5.9 2.5.2 1 .6 2 1 2.9-2.8.6-5.5-.3-6.9-2.1-.1-.7-.1-1.4-.1-2.2zm2 4.5c1.7 1.2 3.9 1.6 6 1.2.5 1.2 1.1 2.2 1.8 3.1C11 21 8.4 20.4 7.3 19.1L6 16.5zm6 3.5c-.7-1-1.3-2-1.8-3.2 1.5.1 3 0 4.5-.3-.5 1.2-1.5 2.4-2.7 3.5zm3-1.3c.3-1 .5-2 .4-3.1 1.6.2 3.1.6 4.4 1.2-1 1.5-2.7 2.2-4.8 1.9z"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Behance">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                    <path d="M7.5 11.25c.97 0 1.75-.78 1.75-1.75S8.47 7.75 7.5 7.75H5v3.5h2.5zm.5 1.5H5V17h3c1.1 0 2-.9 2-2s-.9-2-2-2zM20 11h-5c0-1.38 1.12-2.5 2.5-2.5S20 9.62 20 11zm2 1.5c0 .17-.01.34-.04.5H15c.07 1.2 1.1 2 2.25 2 .8 0 1.5-.4 1.9-1h2.55A4.5 4.5 0 0 1 17.25 17 4.5 4.5 0 0 1 12.75 12.5 4.5 4.5 0 0 1 17.25 8 4.5 4.5 0 0 1 21.75 12.5H22zM9.5 8.5h5v-1h-5v1z"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                    <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-col">
+            <form class="contact-form" id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactName" class="form-label">Full Name</label>
+                  <input type="text" id="contactName" name="name" class="form-input" placeholder="Your name" required />
+                </div>
+                <div class="form-group">
+                  <label for="contactEmail" class="form-label">Email Address</label>
+                  <input type="email" id="contactEmail" name="email" class="form-input" placeholder="you@example.com" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contactSubject" class="form-label">Subject</label>
+                <input type="text" id="contactSubject" name="subject" class="form-input" placeholder="Project inquiry" />
+              </div>
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Message</label>
+                <textarea id="contactMessage" name="message" class="form-textarea" rows="5" placeholder="Tell me about your project..." required></textarea>
+              </div>
+              <button type="submit" class="cta-btn cta-portfolio submit-btn">
+                Send Message
+                <svg width="20" height="20" viewBox="0 0 42 42" fill="none" aria-hidden="true">
+                  <path d="M12.25 29.75L29.75 12.25" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12.25 12.25H29.75V29.75" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <p class="form-success-msg" id="formSuccess">Thanks! I'll get back to you soon.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#top" class="footer-logo">
+          <svg width="40" height="40" viewBox="0 0 46 46" fill="none">
+            <rect width="46" height="46" rx="23" fill="#FD853A"/>
+            <path d="M35.1944 26.5953C34.1017 27.7882 32.7602 28.526 31.1371 28.5885C28.0722 28.7063 25.6997 26.9061 25.4059 24.6538C24.8212 20.1703 27.7404 17.4112 30.9375 17.4112C32.5643 17.4112 33.7753 18.0328 34.8504 19.0293L37.6553 15.8705C36.1332 14.3661 33.7922 13 30.9375 13C28.1735 13 25.6862 13.914 23.8 15.6215V13.4076H9.90002V17.6873H18.6941V24.4952C18.6941 27.5861 17.517 28.5885 15.2262 28.5885C13.7383 28.5885 12.2159 27.7186 10.9276 26.1089L8 29.2749C9.96306 32.0211 12.8978 33 15.3954 33C19.2608 33 21.5638 31.5884 22.7551 29.4611C24.6941 31.801 27.5364 33 30.6114 33C33.6424 33 36.1623 31.8625 38 29.6852L35.1944 26.5953Z" fill="white"/>
+          </svg>
+          <span class="footer-logo-name">JCREA</span>
+        </a>
+        <p class="footer-tagline">Crafting meaningful digital experiences, one pixel at a time.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <a href="#home" class="footer-link">Home</a>
+          <a href="#about" class="footer-link">About</a>
+          <a href="#service" class="footer-link">Service</a>
+          <a href="#resume" class="footer-link">Resume</a>
+          <a href="#project" class="footer-link">Project</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Services</h4>
+          <a href="#service" class="footer-link">UX / UI Design</a>
+          <a href="#service" class="footer-link">Brand Identity</a>
+          <a href="#service" class="footer-link">Web Design</a>
+          <a href="#service" class="footer-link">Prototyping</a>
+          <a href="#service" class="footer-link">Design Systems</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2024 Jenny Crea. All rights reserved.</p>
+      <p class="footer-credit">Designed with passion in San Francisco.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
