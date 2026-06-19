@@ -115,17 +115,14 @@
   document.head.appendChild(style);
 
   // ── Contact form ───────────────────────────────────────────────────
-  const form = document.getElementById('contactForm');
-  const successMsg = document.getElementById('formSuccess');
+ const form = document.getElementById('contactForm');
+const successMsg = document.getElementById('formSuccess');
 
-  if (form && successMsg) {
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      successMsg.classList.add('visible');
-      form.reset();
-      setTimeout(() => successMsg.classList.remove('visible'), 5000);
-    });
-  }
+if (form && successMsg) {
+  form.addEventListener('submit', () => {
+    successMsg.classList.add('visible');
+  });
+}
 
   // ── Header shadow on scroll ────────────────────────────────────────
   const header = document.querySelector('.site-header');
